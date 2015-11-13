@@ -18,6 +18,10 @@ $ docker-compose up -d
 $ docker exec -it ionic-interactive_front_1 bash (start new tabs and do this as many times as you like if you want to run multiple things, like grunt watch, ionic serve etc.)
 ```
 
+## USER 
+username: docker
+password: docker
+
 ### Issues 
 idealy we would want every packet in the conatiner to be under versioncontrol 
 but rightnow there is a issue at line 103. where we docker cant handle stringinterpolation 
