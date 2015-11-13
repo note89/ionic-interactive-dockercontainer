@@ -4,7 +4,7 @@ front:
   image: ahead-ionic
   command: bash
   volumes:
-    - .:/AheadIonic:rw
+    - .:/App:rw
     - /dev/bus/usb:/dev/bus/usb
   privileged: true
   net: "host"
