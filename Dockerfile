@@ -119,8 +119,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y vim
 # -----------------------------------------------------------------------------
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN mkdir /AheadIonic
-WORKDIR /AheadIonic
+RUN mkdir /App
+WORKDIR /App
 
 
 #create a non sudo user
