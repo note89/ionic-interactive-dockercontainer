@@ -8,10 +8,13 @@ This a Dockerfile that creates a dockercontainer that is all you need when devel
 
 
 ## Run without docker-compose
+```
 $ docker run -ti --rm --user=docker --net host --privileged -v /dev/bus/usb:/dev/bus/usb -v $(pwd):/App:rw ionic-interactive bash
+```
 
 ## Run with docker-compose.
+```
 $ docker-compose up -d
 $ docker exec -it ionic-interactive_front_1 bash (start new tabs and do this as many times as you like if you want to run multiple things, like grunt watch, ionic serve etc.)
-
+```
 
